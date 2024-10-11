@@ -1,14 +1,31 @@
-import javafx.application.Application;
-import javafx.stage.Stage;
+public class Brick {
+    private double pX, pY;
+    private boolean broken;
 
-public class Brick extends Application {
-
-    public static void main(String[] args) {
-        launch(args);
+    public Brick(double pX , double pY){
+        this.pX= pX;
+        this.pY =pY;
+        this.broken= false;
     }
 
-    @Override
-    public void start(Stage primaryStage) {
+    public double getpX(){
+        return pX;
+    }
+    public void setpX(double pX){
+        this.pX = pX;
+    }
 
+    public double getpY(){
+        return pY;
+    }
+    public void setpY(double pX){
+        this.pY = pY;
+    }
+
+    public boolean getBroken(){
+        return broken;
+    }
+    public void setBroken(boolean broken){
+        this.broken=broken;
     }
 }
