@@ -20,7 +20,7 @@ public class Brick {
     }
 
     // une érreur ici dans le setter de pY, il faut changer le nom de la variable en pY
-    public void setpY(double pX){
+    public void setpY(double pY){
         this.pY = pY;
     }
 
