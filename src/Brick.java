@@ -24,7 +24,7 @@ public class Brick {
         this.pY = pY;
     }
 
-    public boolean getBroken(){
+    public boolean isBroken(){
         return broken;
     }
     public void setBroken(boolean broken){
