@@ -4,40 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="725308e5-e1a2-4f33-a725-b75c2080a13b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.base/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.base/ADDITIONAL_LICENSE_INFO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.base/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.base/ASSEMBLY_EXCEPTION" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.base/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.base/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.controls/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.controls/ADDITIONAL_LICENSE_INFO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.controls/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.controls/ASSEMBLY_EXCEPTION" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.controls/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.controls/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.fxml/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.fxml/ADDITIONAL_LICENSE_INFO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.fxml/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.fxml/ASSEMBLY_EXCEPTION" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.fxml/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.fxml/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.graphics/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.graphics/ADDITIONAL_LICENSE_INFO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.graphics/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.graphics/ASSEMBLY_EXCEPTION" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.graphics/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.graphics/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.graphics/jpeg_fx.md" beforeDir="false" afterPath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.graphics/jpeg_fx.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.graphics/mesa3d.md" beforeDir="false" afterPath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.graphics/mesa3d.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.media/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.media/ADDITIONAL_LICENSE_INFO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.media/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.media/ASSEMBLY_EXCEPTION" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.media/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.media/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.media/directshow.md" beforeDir="false" afterPath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.media/directshow.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.media/glib.md" beforeDir="false" afterPath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.media/glib.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.media/gstreamer.md" beforeDir="false" afterPath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.media/gstreamer.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.media/libffi.md" beforeDir="false" afterPath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.media/libffi.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.swing/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.swing/ADDITIONAL_LICENSE_INFO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.swing/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.swing/ASSEMBLY_EXCEPTION" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.swing/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.swing/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.web/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.web/ADDITIONAL_LICENSE_INFO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.web/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.web/ASSEMBLY_EXCEPTION" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.web/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.web/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.web/icu_web.md" beforeDir="false" afterPath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.web/icu_web.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.web/libxml2.md" beforeDir="false" afterPath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.web/libxml2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.web/libxslt.md" beforeDir="false" afterPath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.web/libxslt.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.web/webkit.md" beforeDir="false" afterPath="$PROJECT_DIR$/javafx-sdk-21.0.4/legal/javafx.web/webkit.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafx-sdk-21.0.4/lib/javafx.properties" beforeDir="false" afterPath="$PROJECT_DIR$/javafx-sdk-21.0.4/lib/javafx.properties" afterDir="false" />
+    <list default="true" id="725308e5-e1a2-4f33-a725-b75c2080a13b" name="Changes" comment="Mise à Jour JavaFX">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,22 +23,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "H:/PPG2-Projet_CasseBriques-G1/javafx-sdk-21.0.4/lib",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;H:/PPG2-Projet_CasseBriques-G1/javafx-sdk-21.0.4/lib&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="BreakoutGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BreakoutGame" />
@@ -113,7 +82,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
