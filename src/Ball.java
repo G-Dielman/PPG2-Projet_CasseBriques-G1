@@ -1,11 +1,12 @@
 public class Ball {
     private double pX,pY,vX,vY,radius; //Initialisation des attributs de l'objet
 
-    public Ball(double pX,double pY,double vX,double vY){ //constructeur
+    public Ball(double pX,double pY,double vX,double vY,double radius){ //constructeur//J'ai ajouté le radius pour la balle il faut le mettre dans le constructeur
         this.pX = pX;
         this.pY = pY;
         this.vX = vX;
         this.vY = vY;
+        this.radius = radius;
     }
 
     public double getpX(){
