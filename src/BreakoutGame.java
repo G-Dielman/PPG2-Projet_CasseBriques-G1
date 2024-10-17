@@ -3,6 +3,8 @@ import javafx.animation.AnimationTimer;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
                                                                 //https://www.youtube.com/playlist?list=PLrzWQu7Ajpi26jZvP8JhEJgFPFEj_fojO
 public class BreakoutGame extends Application {
@@ -39,6 +41,10 @@ public class BreakoutGame extends Application {
         for
 
         //creer les formes avec javafx  pour les afficher
+
+        Circle BallShape = new Circle(ball.getRadius(), Color.RED);
+
+
 
         //ajouter les formes a la pane
 
