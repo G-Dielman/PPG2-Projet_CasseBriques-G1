@@ -58,7 +58,12 @@ public class BreakoutGame extends Application {
             //boucle pour creer et afficher les objets bricks avec javaFX
         for (Brick brick:bricks) {
             Rectangle brickShape = new Rectangle(brick.getpX(),brick.getpY(),60,40);
-            brickShape.setFill(Color.GREEN);
+
+            //https://docs.oracle.com/javafx/2/api/javafx/scene/shape/Shape.html#setStyle(java.lang.String)
+            //changement couleurs des briques + contour et largeur du contour + leurs couleurs
+            brickShape.setStyle("-fx-fill: #835555; -fx-stroke: #150101; -fx-stroke-width: 2;");
+
+
             root.getChildren().add(brickShape);
         }
 
