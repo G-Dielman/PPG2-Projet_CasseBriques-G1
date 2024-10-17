@@ -24,22 +24,24 @@ public class BreakoutGame extends Application {
         //creation de la pane pour afficher les elements du jeu
         Pane root = new Pane();
 
-        Scene scene = new Scene(root, 800,600);
+        Scene scene = new Scene(root, 1960,1080);
 
         //initialisation de l'objet balle
         ball = new Ball(200,150,1,1,10);   //pos en x,y et v en x,y et le rayon
 
         //initialisation de l'objet paddle
 
-        paddle = new Paddle(350,550,100); //pos en x,y et largeur
+        paddle = new Paddle(780,1000,400); //pos en x,y et largeur
 
         //initialisation des briques avec un tableau
 
-        bricks = new Brick[10]; //10 briques
+        bricks = new Brick[20]; //10 briques
 
 
         //remplir le tableau de briques
-
+        for (int i = 0;i < bricks.length;++i){
+            bricks[i] = new Brick(70 + (i * 80),50); // le i * 80 est l'espacement entre les bricks
+        }
 
         //creer les formes avec javafx  pour les afficher
 
@@ -47,6 +49,12 @@ public class BreakoutGame extends Application {
         Rectangle Paddleshape = new Rectangle(paddle.getX(),paddle.getY(),paddle.getWidth(),10);
 
         Paddleshape.setFill(Color.BLUE);
+            //boucle pour creer et afficher les objets bricks avec javaFX
+        for (Brick brick:bricks) {
+            Rectangle brickShape = new Rectangle(brick.getpX(),brick.getpY(),60,40);
+            brickShape.setFill(Color.GREEN);
+            root.getChildren().add(brickShape);
+        }
 
 
         //ajouter les formes a la pane
