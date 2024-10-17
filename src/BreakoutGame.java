@@ -5,6 +5,7 @@ import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
+import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
                                                                 //https://www.youtube.com/playlist?list=PLrzWQu7Ajpi26jZvP8JhEJgFPFEj_fojO
 public class BreakoutGame extends Application {
@@ -26,7 +27,7 @@ public class BreakoutGame extends Application {
         Scene scene = new Scene(root, 800,600);
 
         //initialisation de l'objet balle
-        ball = new Ball(400,300,1,1,10);   //pos en x,y et v en x,y et le rayon
+        ball = new Ball(200,150,1,1,10);   //pos en x,y et v en x,y et le rayon
 
         //initialisation de l'objet paddle
 
@@ -38,16 +39,19 @@ public class BreakoutGame extends Application {
 
 
         //remplir le tableau de briques
-        for
+
 
         //creer les formes avec javafx  pour les afficher
 
-        Circle BallShape = new Circle(ball.getRadius(), Color.RED);
+        Circle BallShape = new Circle(ball.getpX(),ball.getpY(),ball.getRadius(),Color.RED);
+        Rectangle Paddleshape = new Rectangle(paddle.getX(),paddle.getY(),paddle.getWidth(),10);
 
+        Paddleshape.setFill(Color.BLUE);
 
 
         //ajouter les formes a la pane
 
+        root.getChildren().add(BallShape);
 
 
 
