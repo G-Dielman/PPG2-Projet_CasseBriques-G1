@@ -27,6 +27,9 @@ public class BreakoutGame extends Application {
 
         Scene scene = new Scene(root, 1760,880);
 
+        // Définir une couleur de fond pour le Pane
+        root.setStyle("-fx-background-color: #000009;");
+
         //initialisation de l'objet balle
         ball = new Ball(880,750,4,4,10);   //pos en x,y et v en x,y et le rayon
 

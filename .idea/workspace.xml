@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="725308e5-e1a2-4f33-a725-b75c2080a13b" name="Changes" comment="Modif du GitIgnore">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BreakoutGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BreakoutGame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +71,7 @@
       <updated>1728927197625</updated>
       <workItem from="1728927198976" duration="272000" />
       <workItem from="1728927492749" duration="1490000" />
+      <workItem from="1729183692379" duration="644000" />
     </task>
     <task id="LOCAL-00001" summary="Modif du GitIgnore">
       <option name="closed" value="true" />
