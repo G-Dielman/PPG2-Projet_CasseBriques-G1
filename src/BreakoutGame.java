@@ -1,4 +1,3 @@
-import javafx.animation.Animation;
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -15,6 +14,8 @@ public class BreakoutGame extends Application {
     public Brick[] bricks;
 
 
+
+
     public static void main(String[] args) {
         launch(args);
     }
@@ -24,14 +25,14 @@ public class BreakoutGame extends Application {
         //creation de la pane pour afficher les elements du jeu
         Pane root = new Pane();
 
-        Scene scene = new Scene(root, 1960,1080);
+        Scene scene = new Scene(root, 1760,880);
 
         //initialisation de l'objet balle
-        ball = new Ball(200,150,1,1,10);   //pos en x,y et v en x,y et le rayon
+        ball = new Ball(880,750,4,4,10);   //pos en x,y et v en x,y et le rayon
 
         //initialisation de l'objet paddle
 
-        paddle = new Paddle(780,1000,400); //pos en x,y et largeur
+        paddle = new Paddle(780,800,400); //pos en x,y et largeur
 
         //initialisation des briques avec un tableau
 
@@ -61,6 +62,33 @@ public class BreakoutGame extends Application {
 
         root.getChildren().addAll(BallShape,Paddleshape);
 
+        //gerer les mouvements de la balle
+        AnimationTimer timer = new AnimationTimer() {
+            @Override
+            public void handle(long now) {
+                //déplacer la balle
+
+                ball.move();
+
+
+                BallShape.setCenterX(ball.getpX());
+                BallShape.setCenterY(ball.getpY());
+               if (ball.getpX() + ball.getRadius() >= scene.getWidth() || ball.getpX() - ball.getRadius()<= 0){
+                   ball.setvX(-ball.getvX());
+               }
+                if (ball.getpY() + ball.getRadius() >= scene.getHeight() || ball.getpY() - ball.getRadius() <= 0){
+                    ball.setvY(-ball.getvY());
+                }
+
+
+
+
+
+
+            }
+        };
+        timer.start();
+
 
 
         primaryStage.setTitle("Casse-briques"); //titre de la fenetre
@@ -71,17 +99,6 @@ public class BreakoutGame extends Application {
 
     }
 
-    //gerer les mouvements de la balle
-    AnimationTimer timer = new AnimationTimer() {
-        @Override
-        public void handle(long now) {
-            //déplacer la balle
-
-            ball.move();
 
 
-
-
-        }
-    };
 }
