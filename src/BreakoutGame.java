@@ -51,7 +51,7 @@ public class BreakoutGame extends Application {
 
         //ajouter les formes a la pane
 
-        root.getChildren().add(BallShape);
+        root.getChildren().addAll(BallShape,Paddleshape);
 
 
 
