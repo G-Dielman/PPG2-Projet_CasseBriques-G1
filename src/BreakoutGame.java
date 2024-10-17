@@ -1,6 +1,7 @@
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
@@ -99,9 +100,11 @@ public class BreakoutGame extends Application {
             }
         };
         timer.start();
+        //https://stackoverflow.com/questions/10121991/javafx-application-icon
+        Image icon = new Image("file:resources/icon.png");
 
 
-
+        primaryStage.getIcons().add(icon);//ajouter une icone a la fenetre
         primaryStage.setTitle("Casse-briques"); //titre de la fenetre
 
         primaryStage.setScene(scene); //ajouter la scene a la fenetre
