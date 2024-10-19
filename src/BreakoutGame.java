@@ -74,6 +74,19 @@ public class BreakoutGame extends Application {
 
         root.getChildren().addAll(BallShape,Paddleshape);
 
+        // deplacements du Paddle
+
+        scene.setOnKeyPressed(event -> {
+            switch (event.getCode()){
+                case LEFT :
+                    Paddleshape.setX(Paddleshape.getX() -20);
+                    break;
+
+                case RIGHT:
+                    Paddleshape.setX(Paddleshape.getX() +20 );
+            }
+        });
+
         //gerer les mouvements de la balle
         AnimationTimer timer = new AnimationTimer() {
             @Override
@@ -91,10 +104,6 @@ public class BreakoutGame extends Application {
                 if (ball.getpY() + ball.getRadius() >= scene.getHeight() || ball.getpY() - ball.getRadius() <= 0){
                     ball.setvY(-ball.getvY());
                 }
-
-
-
-
 
 
             }
