@@ -35,7 +35,7 @@ public class BreakoutGame extends Application {
         root.setStyle("-fx-background-color: #3a3a4d;");
 
         //initialisation de l'objet balle
-        ball = new Ball(880,750,4,4,10);   //pos en x,y et v en x,y et le rayon
+        ball = new Ball(880,750,10,10,10);   //pos en x,y et v en x,y et le rayon
 
         //initialisation de l'objet paddle
 
@@ -56,7 +56,7 @@ public class BreakoutGame extends Application {
         Circle BallShape = new Circle(ball.getpX(),ball.getpY(),ball.getRadius(),Color.RED);
         Rectangle Paddleshape = new Rectangle(paddle.getX(),paddle.getY(),paddle.getWidth(),10);
 
-        Paddleshape.setFill(Color.BLUE);
+        Paddleshape.setStyle("-fx-fill: #7577c1;");
             //boucle pour creer et afficher les objets bricks avec javaFX
         for (Brick brick:bricks) {
             Rectangle brickShape = new Rectangle(brick.getpX(),brick.getpY(),60,40);
@@ -80,10 +80,14 @@ public class BreakoutGame extends Application {
             switch (event.getCode()){
                 case LEFT :
                     Paddleshape.setX(Paddleshape.getX() -20);
+                    paddle.setX(paddle.getX()- 20);// !! mise a jour de la pose du paddle, sans cette ligne le paddle bouge mais pas ses coordo
                     break;
 
                 case RIGHT:
                     Paddleshape.setX(Paddleshape.getX() +20 );
+                    paddle.setX(paddle.getX() + 20);//IDEM
+
+                    break;
             }
         });
 
@@ -104,6 +108,19 @@ public class BreakoutGame extends Application {
                 if (ball.getpY() + ball.getRadius() >= scene.getHeight() || ball.getpY() - ball.getRadius() <= 0){
                     ball.setvY(-ball.getvY());
                 }
+
+                // Gérer les rebonds sur le paddle
+                if (ball.getpY() + ball.getRadius() >= paddle.getY() &&
+                        ball.getpX() + ball.getRadius() >= paddle.getX() &&
+                        ball.getpX() - ball.getRadius() <= paddle.getX() + paddle.getWidth()) {
+                    ball.setvY(-ball.getvY()); // Inverser la direction Y de la balle
+                    ball.setpY(paddle.getY() - ball.getRadius()); // Ajuster la position de la balle
+                    System.out.println("Collision avec le paddle!"); // Pour débogage
+                }
+
+
+
+
 
 
             }
