@@ -86,10 +86,15 @@ public class BreakoutGame extends Application {
                 case RIGHT:
                     Paddleshape.setX(Paddleshape.getX() +20 );
                     paddle.setX(paddle.getX() + 20);//IDEM
-
                     break;
             }
         });
+        scene.setOnMouseMoved(event ->{
+            Paddleshape.setX(event.getX()); //Mouvement du paddle avec la souris
+            paddle.setX(event.getX()); // MAJ position du paddle
+        });
+
+
 
         //gerer les mouvements de la balle
         AnimationTimer timer = new AnimationTimer() {
