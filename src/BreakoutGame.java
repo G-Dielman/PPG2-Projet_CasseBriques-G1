@@ -35,7 +35,7 @@ public class BreakoutGame extends Application {
         root.setStyle("-fx-background-color: #3a3a4d;");
 
         //initialisation de l'objet balle
-        ball = new Ball(880,750,10,10,10);   //pos en x,y et v en x,y et le rayon
+        ball = new Ball(880,750,5,5,10);   //pos en x,y et v en x,y et le rayon
 
         //initialisation de l'objet paddle
 
@@ -90,8 +90,17 @@ public class BreakoutGame extends Application {
             }
         });
         scene.setOnMouseMoved(event ->{
+            double padX = event.getX();
+
             Paddleshape.setX(event.getX()); //Mouvement du paddle avec la souris
             paddle.setX(event.getX()); // MAJ position du paddle
+
+            //empecher le paddle de sortir de la fenetre
+            if (padX + paddle.getWidth() >= scene.getWidth()){
+                Paddleshape.setX(scene.getWidth() - paddle.getWidth());
+                paddle.setX(scene.getWidth() - paddle.getWidth());
+            }
+
         });
 
 
