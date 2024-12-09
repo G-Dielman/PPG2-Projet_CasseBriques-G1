@@ -5,18 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="725308e5-e1a2-4f33-a725-b75c2080a13b" name="Changes" comment="Modif du GitIgnore">
+      <change afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BreakoutGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BreakoutGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ball.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BreakoutGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Brick.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Paddle.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2nRDs1r9CA1F2jh7OrVOvrgmq21" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -25,10 +40,13 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.BreakoutGame.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;H:/PPG2-Projet_CasseBriques-G1/javafx-sdk-21.0.4/lib&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;H:/TEP2/Programmation niv.2/Projet.Breakout&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -81,6 +99,8 @@
       <workItem from="1729964993095" duration="822000" />
       <workItem from="1730678511128" duration="126000" />
       <workItem from="1730731905185" duration="377000" />
+      <workItem from="1730737270587" duration="1956000" />
+      <workItem from="1733763247416" duration="1333000" />
     </task>
     <task id="LOCAL-00001" summary="Modif du GitIgnore">
       <option name="closed" value="true" />
