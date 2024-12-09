@@ -73,4 +73,20 @@ public class BreakoutGame extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
     }
+    private void stopGame(String message, Pane root) {
+        // Arrêter l'animation
+        timer.stop();
+        // Créer un Label pour afficher le message
+        Label endMessage = new Label(message);
+        endMessage.setFont(Font.font("Arial", FontWeight.BOLD, 36));
+        endMessage.setTextFill(Color.INDIANRED);
+        endMessage.setTextAlignment(TextAlignment.CENTER);
+        // Centrer le Label dans la fenêtre
+        StackPane stackPane = new StackPane();
+        stackPane.getChildren().add(endMessage);
+        stackPane.setPrefSize(root.getWidth(), root.getHeight());
+        stackPane.setStyle("-fx-background-color: rgba(0, 0, 0, 0.7);"); // Fond semi-transparent
+        root.getChildren().add(stackPane);
+    }
+
 }
