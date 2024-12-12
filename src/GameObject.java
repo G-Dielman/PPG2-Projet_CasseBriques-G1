@@ -27,6 +27,7 @@ public abstract class GameObject {
 
     public void setColor(Color color) { //setter
         this.color = color;
+        shape.setFill(color);
     }
 
     public abstract Shape getShape(); //Getter abstrait
