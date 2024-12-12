@@ -35,9 +35,9 @@ public abstract class GameObject {
         this.shape = shape;
     }
 
-    public GameObject(double y, double x, Shape shape,Color color){ //constructeur
-        this.y = y;
+    public GameObject(double x, double y, Shape shape,Color color){ //constructeur
         this.x = x;
+        this.y = y;
         this.shape = shape;
         this.color = color;
     }
