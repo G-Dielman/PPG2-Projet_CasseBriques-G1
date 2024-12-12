@@ -5,8 +5,8 @@ public abstract class GameObject {
 
     // Les attributs
     private Shape shape;
-    private double x;
-    private double y;
+    protected double x;
+    protected double y;
     private Color color;
 
     public double getX() { //getter
