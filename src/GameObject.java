@@ -4,7 +4,7 @@ import javafx.scene.shape.Shape;
 public abstract class GameObject {
 
     // Les attributs
-    private Shape shape;
+    protected Shape shape;
     protected double x;
     protected double y;
     private Color color;
