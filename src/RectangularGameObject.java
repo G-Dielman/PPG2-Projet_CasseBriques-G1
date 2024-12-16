@@ -50,7 +50,26 @@ public abstract class RectangularGameObject extends GameObject implements Collid
 
     @Override
     public boolean collideWith(Ball ball) {
-        if ( ball.shape + ball. )
-        return false;
+       Rectangle rect = getShape();
+       Double ballX = ball.getX();
+       Double ballY = ball.getY();
+       Double ballRadius = ball.getShape().getRadius();
+
+        return ballX + ballRadius >= rect.getX() && ballX - ballRadius <= rect.getX() &&
+        ballY + ballRadius >= rect.getY() && ballY - ballRadius <= rect.getY();
+
     }
+
+    public void onCollisionWith(Ball ball){
+        Rectangle rect = getShape();
+        Double ballX = ball.getX();
+        Double ballY = ball.getY();
+        Double ballRadius = ball.getShape().getRadius();
+
+        if (ballX + ballRadius >= rect.getX() && ballX - ballRadius <= rect.getX()) ball.switchVx();
+
+        if (ballY + ballRadius >= rect.getY() && ballY - ballRadius <= rect.getY()) ball.switchVy();
+
+    }
+
 }
