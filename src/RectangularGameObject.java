@@ -7,6 +7,9 @@ public abstract class RectangularGameObject extends GameObject implements Collid
     protected double width; // largeur
     protected double height; // hauteur
 
+
+
+
     // constructeur
     public RectangularGameObject(double x, double y, double width, double height, Color color) {
         // Appelle le constructeur de GameObject avec un Rectangle
@@ -14,6 +17,7 @@ public abstract class RectangularGameObject extends GameObject implements Collid
         this.width = width;
         this.height = height;
     }
+
 
     public double getWidth() {
         return width; // retourne la largeur
@@ -46,7 +50,7 @@ public abstract class RectangularGameObject extends GameObject implements Collid
 
     @Override
     public boolean collideWith(Ball ball) {
-        if (//ball = )
+        if ( ball.shape + ball. )
         return false;
     }
 }
