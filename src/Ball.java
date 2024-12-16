@@ -6,7 +6,7 @@ public class Ball extends GameObject {
     private double vx;
     private double vy;
     private double Radius;
-    private static final Color DEFAULT_COLOR = Color.BLUE;
+    private static Color DEFAULT_COLOR = Color.BLUE;
 
     // Constructeur, methodes ....
 

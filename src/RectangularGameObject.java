@@ -48,6 +48,22 @@ public abstract class RectangularGameObject extends GameObject implements Collid
         ((Rectangle)this.shape).setY(y);
     }
 
+    public boolean collideLeft(Ball ball){      // collision avec le coté gauche du rectangle
+        return ball.getX() + ball.getRadius() >= getShape().getX();
+    }
+
+    public boolean collideRight(Ball ball){                   // collision avec le coté droit du rect
+        return ball.getX() - ball.getRadius() <= getShape().getX();
+    }
+
+    public boolean collideTop(Ball ball){
+        return ball.getY() + ball.getRadius() >= getShape().getX();// collision avec le dessus du rect
+    }
+
+    public boolean collideBottom(Ball ball){
+        return  ball.getY() - ball.getRadius() <= getShape().getX(); // collision avec le dessous du rect
+    }
+
     @Override
     public boolean collideWith(Ball ball) {
        Rectangle rect = getShape();
@@ -61,14 +77,11 @@ public abstract class RectangularGameObject extends GameObject implements Collid
     }
 
     public void onCollisionWith(Ball ball){
-        Rectangle rect = getShape();
-        Double ballX = ball.getX();
-        Double ballY = ball.getY();
-        Double ballRadius = ball.getShape().getRadius();
 
-        if (ballX + ballRadius >= rect.getX() && ballX - ballRadius <= rect.getX()) ball.switchVx();
 
-        if (ballY + ballRadius >= rect.getY() && ballY - ballRadius <= rect.getY()) ball.switchVy();
+        if (collideLeft(ball) && collideRight(ball)) ball.switchVx();
+
+        if (collideTop(ball) && collideBottom(ball)) ball.switchVy();
 
     }
 
