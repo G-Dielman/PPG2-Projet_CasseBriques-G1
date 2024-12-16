@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="725308e5-e1a2-4f33-a725-b75c2080a13b" name="Changes" comment="Ajustement: creation methodes collide left,right,up,down">
-      <change afterPath="$PROJECT_DIR$/src/NormalBrick.java" afterDir="false" />
+    <list default="true" id="725308e5-e1a2-4f33-a725-b75c2080a13b" name="Changes" comment="Creation de la classe NormalBrick + constructeur et methodes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RectangularGameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RectangularGameObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BreakoutGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BreakoutGame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734370719243</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Creation de la classe NormalBrick + constructeur et methodes">
+      <option name="closed" value="true" />
+      <created>1734377699739</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1734377699739</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,6 +234,7 @@
     <MESSAGE value="creation des methodes getShape(),setX() et setY()" />
     <MESSAGE value="debut methode boolen collideWith" />
     <MESSAGE value="Ajustement: creation methodes collide left,right,up,down" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajustement: creation methodes collide left,right,up,down" />
+    <MESSAGE value="Creation de la classe NormalBrick + constructeur et methodes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creation de la classe NormalBrick + constructeur et methodes" />
   </component>
 </project>

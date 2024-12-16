@@ -1,10 +1,18 @@
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.StackPane;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontWeight;
+import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 
 public class BreakoutGame extends Application {
+
+    AnimationTimer timer;
 
     public static void main(String[] args) {
         launch(args);
@@ -73,6 +81,8 @@ public class BreakoutGame extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
     }
+
+
     private void stopGame(String message, Pane root) {
         // Arrêter l'animation
         timer.stop();
