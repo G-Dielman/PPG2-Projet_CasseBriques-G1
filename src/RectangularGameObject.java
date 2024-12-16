@@ -68,7 +68,7 @@ public abstract class RectangularGameObject extends GameObject implements Collid
     public boolean collideWith(Ball ball) {
 
 
-        return collideLeft(ball) && collideRight(ball)&& collideTop(ball) && collideBottom(ball);
+        return collideLeft(ball) || collideRight(ball) || collideTop(ball) || collideBottom(ball);
 
     }
 
