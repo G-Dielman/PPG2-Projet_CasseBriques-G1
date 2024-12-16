@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="725308e5-e1a2-4f33-a725-b75c2080a13b" name="Changes" comment="debut methode boolen collideWith">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RectangularGameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RectangularGameObject.java" afterDir="false" />
-    </list>
+    <list default="true" id="725308e5-e1a2-4f33-a725-b75c2080a13b" name="Changes" comment="Ajustement: creation methodes collide left,right,up,down" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -180,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734363893551</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Ajustement: creation methodes collide left,right,up,down">
+      <option name="closed" value="true" />
+      <created>1734370719243</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1734370719243</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +222,7 @@
     <MESSAGE value="modification methode void, mise à jour de la position du cercle" />
     <MESSAGE value="creation des methodes getShape(),setX() et setY()" />
     <MESSAGE value="debut methode boolen collideWith" />
-    <option name="LAST_COMMIT_MESSAGE" value="debut methode boolen collideWith" />
+    <MESSAGE value="Ajustement: creation methodes collide left,right,up,down" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajustement: creation methodes collide left,right,up,down" />
   </component>
 </project>
