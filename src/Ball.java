@@ -43,6 +43,8 @@ public class Ball extends GameObject {
     public void move(){
         this.x += this.vx;
         this.y += this.vy;
+        setX(this.x);      // mise à jour de la position du cercle en x
+        setY(this.y);       // mise à jour de la position du cercle en y
     }
 
     // changer le signe du vx
