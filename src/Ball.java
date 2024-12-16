@@ -5,7 +5,7 @@ import javafx.scene.shape.Shape;
 public class Ball extends GameObject {
     private double vx;
     private double vy;
-    private double radius;
+    private double Radius;
     private static final Color DEFAULT_COLOR = Color.BLUE;
 
     // Constructeur, methodes ....
@@ -15,7 +15,7 @@ public class Ball extends GameObject {
         super( x,y,new Circle(x,y,radius),DEFAULT_COLOR );
         this.vx = vx;
         this.vy = vy;
-        this.radius = radius;
+        this.Radius = radius;
 
     }
 

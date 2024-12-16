@@ -3,7 +3,7 @@ import javafx.scene.shape.Rectangle;
 import javafx.scene.shape.Shape;
 
 
-public abstract class RectangularGameObject extends GameObject {
+public abstract class RectangularGameObject extends GameObject implements Collidable {
     protected double width; // largeur
     protected double height; // hauteur
 
@@ -44,5 +44,9 @@ public abstract class RectangularGameObject extends GameObject {
         ((Rectangle)this.shape).setY(y);
     }
 
-
+    @Override
+    public boolean collideWith(Ball ball) {
+        if (//ball = )
+        return false;
+    }
 }
