@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="725308e5-e1a2-4f33-a725-b75c2080a13b" name="Changes" comment="creation constructeur de la Classe Ball , mais pas fini">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="725308e5-e1a2-4f33-a725-b75c2080a13b" name="Changes" comment="modification methode void, mise à jour de la position du cercle">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ball.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RectangularGameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RectangularGameObject.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +96,7 @@
       <workItem from="1730731905185" duration="377000" />
       <workItem from="1730737270587" duration="1956000" />
       <workItem from="1733763247416" duration="4504000" />
-      <workItem from="1734356756681" duration="1118000" />
+      <workItem from="1734356756681" duration="3361000" />
     </task>
     <task id="LOCAL-00001" summary="Modif du GitIgnore">
       <option name="closed" value="true" />
@@ -132,7 +130,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734017947245</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="creation constructeur de la Classe Ball avec le constructeur , getter, setter et les methodes : move(),switchVx() et switchVy()">
+      <option name="closed" value="true" />
+      <created>1734358122263</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1734358122263</updated>
+    </task>
+    <task id="LOCAL-00006" summary="modification methode void, mise à jour de la position du cercle">
+      <option name="closed" value="true" />
+      <created>1734358379469</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1734358379469</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +180,8 @@
     <MESSAGE value="Reinitialize projet" />
     <MESSAGE value="creation constructeur de la Classe Ball" />
     <MESSAGE value="creation constructeur de la Classe Ball , mais pas fini" />
-    <option name="LAST_COMMIT_MESSAGE" value="creation constructeur de la Classe Ball , mais pas fini" />
+    <MESSAGE value="creation constructeur de la Classe Ball avec le constructeur , getter, setter et les methodes : move(),switchVx() et switchVy()" />
+    <MESSAGE value="modification methode void, mise à jour de la position du cercle" />
+    <option name="LAST_COMMIT_MESSAGE" value="modification methode void, mise à jour de la position du cercle" />
   </component>
 </project>

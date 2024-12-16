@@ -1,5 +1,6 @@
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
+import javafx.scene.shape.Shape;
 
 
 public abstract class RectangularGameObject extends GameObject {
@@ -24,6 +25,24 @@ public abstract class RectangularGameObject extends GameObject {
 
     // gerer colision a faire...
 
+   // getShape retourne un Rectangle ici
+    public Rectangle getShape(){
+        return (Rectangle)this.shape;
+    }
+
+    // pas sur que c'est juste!!!
+    @Override
+    public void setX(double x) {
+        this.x=x;
+        ((Rectangle)this.shape).setX(x);
+    }
+
+    // pas sur que c'est juste!!!
+    @Override
+    public void setY(double y) {
+        this.y=y;
+        ((Rectangle)this.shape).setY(y);
+    }
 
 
 }
