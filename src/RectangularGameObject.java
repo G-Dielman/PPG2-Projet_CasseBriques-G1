@@ -22,7 +22,7 @@ public abstract class RectangularGameObject extends GameObject {
         return height; // retourne la hauteur
     }
 
-    // gerer colision a daire...
+    // gerer colision a faire...
 
 
 

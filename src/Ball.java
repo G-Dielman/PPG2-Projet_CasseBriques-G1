@@ -23,12 +23,16 @@ public class Ball extends GameObject {
     @Override
     public void setX(double x) {
         this.x=x;
-
+        // il met à jour la position du cercle en x
+        ((Circle)this.shape).setCenterX(x);
     }
 
     @Override
     public void setY(double y) {
+
         this.y=y;
+        //il met à jour la position du cercle en y
+        ((Circle)this.shape).setCenterY(y);
     }
 
     @Override
