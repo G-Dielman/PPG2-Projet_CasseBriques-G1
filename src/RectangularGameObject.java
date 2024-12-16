@@ -75,9 +75,11 @@ public abstract class RectangularGameObject extends GameObject implements Collid
     public void onCollisionWith(Ball ball){
 
 
-        if (collideLeft(ball) && collideRight(ball)) ball.switchVx();
+        if (collideLeft(ball) || collideRight(ball))
+            ball.switchVx();
 
-        if (collideTop(ball) && collideBottom(ball)) ball.switchVy();
+        if (collideTop(ball) || collideBottom(ball))
+            ball.switchVy();
 
     }
 
