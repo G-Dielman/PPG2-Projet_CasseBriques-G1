@@ -48,20 +48,28 @@ public abstract class RectangularGameObject extends GameObject implements Collid
         ((Rectangle)this.shape).setY(y);
     }
 
-    public boolean collideLeft(Ball ball){      // collision avec le coté gauche du rectangle
-        return ball.getX() + ball.getRadius() >= getShape().getX();
+    public boolean collideLeft(Ball ball) { // collision avec le côté gauche du rectangle
+        // Vérifie si la balle est à gauche du rectangle et si elle touche le côté gauche
+        return ball.getX() + ball.getRadius() >= getShape().getX()
+                && ball.getX() - ball.getRadius() <= getShape().getX();
     }
 
-    public boolean collideRight(Ball ball){                   // collision avec le coté droit du rect
-        return ball.getX() - ball.getRadius() <= getShape().getX();
+    public boolean collideRight(Ball ball) { // collision avec le côté droit du rectangle
+        // Vérifie si la balle est à droite du rectangle et si elle touche le côté droit
+        return ball.getX() - ball.getRadius() <= getShape().getX() + getShape().getWidth()
+                && ball.getX() + ball.getRadius() >= getShape().getX() + getShape().getWidth();
     }
 
-    public boolean collideTop(Ball ball){
-        return ball.getY() + ball.getRadius() >= getShape().getX();// collision avec le dessus du rect
+    public boolean collideTop(Ball ball) { // collision avec le dessus du rectangle
+        // Vérifie si la balle est en haut du rectangle et si elle touche le dessus
+        return ball.getY() + ball.getRadius() >= getShape().getY()
+                && ball.getY() - ball.getRadius() <= getShape().getY();
     }
 
-    public boolean collideBottom(Ball ball){
-        return  ball.getY() - ball.getRadius() <= getShape().getX(); // collision avec le dessous du rect
+    public boolean collideBottom(Ball ball) { // collision avec le dessous du rectangle
+        // Vérifie si la balle est en bas du rectangle et si elle touche le dessous
+        return ball.getY() - ball.getRadius() <= getShape().getY() + getShape().getHeight()
+                && ball.getY() + ball.getRadius() >= getShape().getY() + getShape().getHeight();
     }
 
     @Override

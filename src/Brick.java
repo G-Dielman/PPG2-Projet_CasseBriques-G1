@@ -6,13 +6,13 @@ import javafx.scene.shape.Shape;
 public abstract class Brick extends RectangularGameObject {
 
     protected boolean broken;
-    private boolean visible;
+
 
 
     public Brick(double x, double y, double width, double height, Color color) {
         super(x, y, width, height, color);
 
-    broken = false;
+        broken = false;
     }
 
     public boolean isBroken(){

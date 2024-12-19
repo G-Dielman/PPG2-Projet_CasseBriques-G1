@@ -14,12 +14,12 @@ public class BreakoutGame extends Application {
 
     private Brick[] createBricks(Pane root, Scene scene) {
         int rows = 5; // nombre de ranges de brique
-        int cols = 10; // nombre de colonnes de brique
+        int cols = 3; // nombre de colonnes de brique
         double brickWidth = scene.getWidth() / cols; // largeur d'une brique
         double brickHeight = 20; // hauteur d'une brique
         Brick[] bricks = new Brick[rows * cols]; // tableau pour stck les briq
 
-        for (int row = 0; row < rows; row++) {
+       for (int row = 0; row < rows; row++) {
             for (int col = 0; col < cols; col++) {
                 double x = col * brickWidth; // position x de la brique
                 double y = row * brickHeight; // position y de la brique
@@ -28,6 +28,7 @@ public class BreakoutGame extends Application {
                 root.getChildren().add(brick.getShape()); // ajouter la forme au Pane
             }
         }
+        System.out.println(bricks.length);
         return bricks; // retourner le tableau
     }
 
@@ -62,6 +63,7 @@ public class BreakoutGame extends Application {
                     break;
             }
         });
+
         // AnimationTimer pour déplacer la balle
         this.timer = new AnimationTimer() {
             @Override
