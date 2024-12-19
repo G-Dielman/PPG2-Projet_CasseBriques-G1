@@ -63,14 +63,14 @@ public abstract class RectangularGameObject extends GameObject implements Collid
     }
 
     public boolean collideTop(Ball ball){
-        return ball.getY() + ball.getRadius() >= getShape().getY()
+        return ball.getY() + ball.getRadius() >= getShape().getY() + getShape().getHeight()
                 && ball.getY() + ball.getRadius() <= getShape().getY()
                 && ball.getX()  <= getShape().getX() + getShape().getWidth()
                 && ball.getX() >= getShape().getX();// collision avec le dessus du rect
     }
 
     public boolean collideBottom(Ball ball){
-        return  ball.getY() - ball.getRadius() <= getShape().getY()
+        return  ball.getY() - ball.getRadius() <= getShape().getY() + getShape().getHeight()
                 && ball.getY() - ball.getRadius() >= getShape().getY()
                 && ball.getX()  <= getShape().getX() + getShape().getWidth()
                 && ball.getX() >= getShape().getX(); // collision avec le dessous du rect
