@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="725308e5-e1a2-4f33-a725-b75c2080a13b" name="Changes" comment="elimination bugs de la classe Main">
+    <list default="true" id="725308e5-e1a2-4f33-a725-b75c2080a13b" name="Changes" comment="correction collisions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BreakoutGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BreakoutGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Brick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Brick.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RectangularGameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RectangularGameObject.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +101,7 @@
       <workItem from="1734365626185" duration="1857000" />
       <workItem from="1734422316026" duration="1764000" />
       <workItem from="1734459200384" duration="1307000" />
-      <workItem from="1734611992673" duration="5767000" />
+      <workItem from="1734611992673" duration="8270000" />
     </task>
     <task id="LOCAL-00001" summary="Modif du GitIgnore">
       <option name="closed" value="true" />
@@ -208,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734378877999</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="correction collisions">
+      <option name="closed" value="true" />
+      <created>1734617887634</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1734617887634</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,6 +256,7 @@
     <MESSAGE value="Ajustement: creation methodes collide left,right,up,down" />
     <MESSAGE value="Creation de la classe NormalBrick + constructeur et methodes" />
     <MESSAGE value="elimination bugs de la classe Main" />
-    <option name="LAST_COMMIT_MESSAGE" value="elimination bugs de la classe Main" />
+    <MESSAGE value="correction collisions" />
+    <option name="LAST_COMMIT_MESSAGE" value="correction collisions" />
   </component>
 </project>

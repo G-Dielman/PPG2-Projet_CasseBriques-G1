@@ -43,7 +43,7 @@ public class BreakoutGame extends Application {
         Pane root = new Pane();
         Scene scene = new Scene(root, 500, 700);
         // Création de la balle et de la raquette
-        Ball ball = new Ball(scene.getWidth()/2, scene.getHeight()-100, 10, 2, 2);
+        Ball ball = new Ball(scene.getWidth()/2, scene.getHeight()-100, 2, 2, 2);
         Paddle paddle = new Paddle(scene.getWidth()/2, scene.getHeight()-50 , 100, 20);
         // Ajouter les formes au pane
         root.getChildren().addAll(ball.getShape() , paddle.getShape());
