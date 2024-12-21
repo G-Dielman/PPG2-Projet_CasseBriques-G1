@@ -13,24 +13,29 @@ import javafx.stage.Stage;
 public class BreakoutGame extends Application {
 
     private Brick[] createBricks(Pane root, Scene scene) {
-        int rows = 5; // nombre de ranges de brique
-        int cols = 3; // nombre de colonnes de brique
-        double brickWidth = scene.getWidth() / cols; // largeur d'une brique
+        int rows = 7; // nombre de range
+        int cols = 5; // nombre de colonne
+        double horizontalSpacing = 5; // espacement horizontal
+        double verticalSpacing = 5; // espacement vertical
+        double brickWidth = (scene.getWidth() - (cols - 1) * horizontalSpacing) / cols; // largeur
         double brickHeight = 20; // hauteur d'une brique
-        Brick[] bricks = new Brick[rows * cols]; // tableau pour stck les briq
 
-       for (int row = 0; row < rows; row++) {
+        Brick[] bricks = new Brick[rows * cols]; // tableau pour stocker les briques
+
+        for (int row = 0; row < rows; row++) {
             for (int col = 0; col < cols; col++) {
-                double x = col * brickWidth; // position x de la brique
-                double y = row * brickHeight; // position y de la brique
-                SolidBrick brick = new SolidBrick(x, y, brickWidth, brickHeight); // creer la brique
+                double x = col * (brickWidth + horizontalSpacing); // position x
+                double y = row * (brickHeight + verticalSpacing); // position y d
+                SolidBrick brick = new SolidBrick(x, y, brickWidth, brickHeight); // créer une brique
                 bricks[row * cols + col] = brick; // ajouter au tableau
                 root.getChildren().add(brick.getShape()); // ajouter la forme au Pane
             }
         }
-        System.out.println(bricks.length);
+
+        System.out.println("Nombre total de briques : " + bricks.length);
         return bricks; // retourner le tableau
     }
+
 
     AnimationTimer timer;
 
@@ -43,8 +48,8 @@ public class BreakoutGame extends Application {
         Pane root = new Pane();
         Scene scene = new Scene(root, 500, 700);
         // Création de la balle et de la raquette
-        Ball ball = new Ball(scene.getWidth()/2, scene.getHeight()-100, 2, 2, 2);
-        Paddle paddle = new Paddle(scene.getWidth()/2, scene.getHeight()-50 , 100, 20);
+        Ball ball = new Ball(scene.getWidth()/2, scene.getHeight()-100, 3, 3, 3);
+        Paddle paddle = new Paddle(scene.getWidth()/2, scene.getHeight()-50 , 400, 20);
         // Ajouter les formes au pane
         root.getChildren().addAll(ball.getShape() , paddle.getShape());
         // Création et affichage des briques. Les briques sont ajoutées au Pane par la fonction et
