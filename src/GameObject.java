@@ -25,6 +25,7 @@ public abstract class GameObject {
 
     public void setColor(Color color) { //setter
         this.color = color;
+        shape.setStroke(Color.RED);
         shape.setFill(color);
     }
 

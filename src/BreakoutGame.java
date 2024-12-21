@@ -17,10 +17,10 @@ public class BreakoutGame extends Application {
     private Brick[] createBricks(Pane root, Scene scene) {
         int rows = 7; // nombre de range
         int cols = 5; // nombre de colonne
-        double horizontalSpacing = 5; // espacement horizontal
-        double verticalSpacing = 5; // espacement vertical
+        double horizontalSpacing = 6; // espacement horizontal
+        double verticalSpacing = 6; // espacement vertical
         double brickWidth = (scene.getWidth() - (cols - 1) * horizontalSpacing) / cols; // largeur
-        double brickHeight = 20; // hauteur d'une brique
+        double brickHeight = 40; // hauteur d'une brique
 
         Brick[] bricks = new Brick[rows * cols]; // tableau pour stocker les briques
 
@@ -57,7 +57,7 @@ public class BreakoutGame extends Application {
         Pane root = new Pane();
         Scene scene = new Scene(root, 500, 700);
         // Création de la balle et de la raquette
-        Ball ball = new Ball(scene.getWidth()/2, scene.getHeight()-100, 3, 3, 5);
+        Ball ball = new Ball(scene.getWidth()/2, scene.getHeight()-100, 3, 3, 9);
         Paddle paddle = new Paddle(scene.getWidth()/2, scene.getHeight()-50 , 100, 20);
         // Ajouter les formes au pane
         root.getChildren().addAll(ball.getShape() , paddle.getShape());
