@@ -1,6 +1,6 @@
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
-import javafx.scene.shape.Shape;
+
 
 
 public abstract class RectangularGameObject extends GameObject implements Collidable {
@@ -48,26 +48,29 @@ public abstract class RectangularGameObject extends GameObject implements Collid
         ((Rectangle)this.shape).setY(y);
     }
 
-    public boolean collideLeft(Ball ball){      // collision avec le coté gauche du rectangle
+    public boolean collideLeft(Ball ball) {
         return ball.getX() + ball.getRadius() >= getShape().getX()
-                && ball.getX() + ball.getRadius() <= getShape().getX()+getShape().getWidth()
+                && ball.getX() <= getShape().getX() // Centre de la balle est à gauche du bord gauche
                 && ball.getY() <= getShape().getY() + getShape().getHeight()
                 && ball.getY() >= getShape().getY();
     }
 
-    public boolean collideRight(Ball ball){                   // collision avec le coté droit du rect
-        return ball.getX() - ball.getRadius() <= getShape().getX()
-                && ball.getX() - ball.getRadius() >= getShape().getX()+getShape().getWidth()
+
+    public boolean collideRight(Ball ball) {
+        return ball.getX() - ball.getRadius() <= getShape().getX() + getShape().getWidth() // Bord gauche de la balle touche la bordure droite
+                && ball.getX() >= getShape().getX() + getShape().getWidth() // Centre de la balle est à droite
                 && ball.getY() <= getShape().getY() + getShape().getHeight()
                 && ball.getY() >= getShape().getY();
     }
 
-    public boolean collideTop(Ball ball){
-        return ball.getY() + ball.getRadius() >= getShape().getY() + getShape().getHeight()
-                && ball.getY() + ball.getRadius() <= getShape().getY()
-                && ball.getX()  <= getShape().getX() + getShape().getWidth()
-                && ball.getX() >= getShape().getX();// collision avec le dessus du rect
+
+    public boolean collideTop(Ball ball) {
+        return ball.getY() + ball.getRadius() >= getShape().getY() // Bord inférieur de la balle touche le haut
+                && ball.getY() <= getShape().getY()
+                && ball.getX() <= getShape().getX() + getShape().getWidth()
+                && ball.getX() >= getShape().getX();
     }
+
 
     public boolean collideBottom(Ball ball){
         return  ball.getY() - ball.getRadius() <= getShape().getY() + getShape().getHeight()

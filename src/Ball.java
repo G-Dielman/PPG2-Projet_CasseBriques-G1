@@ -23,9 +23,7 @@ public class Ball extends GameObject {
         return this.Radius;
     }
 
-    public void setRadius(double radius){
-        this.Radius=Radius;
-    }
+
 
     @Override
     public void setX(double x) {

@@ -7,6 +7,9 @@ public class Paddle extends RectangularGameObject{
         super(x, y, width, height, DEFAULT_COLOR);
     }
 
+    public void onCollisionWith(Ball ball) {
+        super.onCollisionWith(ball);
+    }
 
 }
 
