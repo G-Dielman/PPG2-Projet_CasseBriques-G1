@@ -7,7 +7,7 @@ public abstract class GameObject {
     protected Shape shape;
     protected double x;
     protected double y;
-    private Color color;
+    protected Color color;
 
     public double getX() { //getter
         return x;
@@ -21,9 +21,7 @@ public abstract class GameObject {
 
     public abstract void setY(double y); //setter abstrait
 
-    public Color getColor() { //getter
-        return color;
-    }
+
 
     public void setColor(Color color) { //setter
         this.color = color;
@@ -32,9 +30,7 @@ public abstract class GameObject {
 
     public abstract Shape getShape(); //Getter abstrait
 
-    public void setShape(Shape shape) { //setter Shape
-        this.shape = shape;
-    }
+
 
     public GameObject(double x, double y, Shape shape,Color color){ //constructeur
         this.x = x;

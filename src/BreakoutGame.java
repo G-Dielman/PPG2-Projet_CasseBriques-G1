@@ -77,6 +77,19 @@ public class BreakoutGame extends Application {
                     break;
             }
         });
+        scene.setOnMouseMoved(event ->{
+            double padX = event.getX();
+
+            paddle.setX(event.getX()); //Mouvement du paddle avec la souris
+            paddle.setX(event.getX()); // MAJ position du paddle
+
+            //empecher le paddle de sortir de la fenetre
+            if (padX + paddle.getWidth() >= scene.getWidth()){
+                paddle.setX(scene.getWidth() - paddle.getWidth());
+                paddle.setX(scene.getWidth() - paddle.getWidth());
+            }
+
+        });
 
         // AnimationTimer pour déplacer la balle
         this.timer = new AnimationTimer() {
