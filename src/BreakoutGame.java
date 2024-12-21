@@ -10,6 +10,8 @@ import javafx.scene.text.FontWeight;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 
+import java.util.Random;
+
 public class BreakoutGame extends Application {
 
     private Brick[] createBricks(Pane root, Scene scene) {
@@ -22,11 +24,18 @@ public class BreakoutGame extends Application {
 
         Brick[] bricks = new Brick[rows * cols]; // tableau pour stocker les briques
 
+        Random random = new Random();// on utilise random pour génerer des briques aléatoires, normales ou solides
+
         for (int row = 0; row < rows; row++) {
             for (int col = 0; col < cols; col++) {
                 double x = col * (brickWidth + horizontalSpacing); // position x
                 double y = row * (brickHeight + verticalSpacing); // position y d
-                SolidBrick brick = new SolidBrick(x, y, brickWidth, brickHeight); // créer une brique
+                Brick brick;
+                if (random.nextBoolean()) { // 50% de chance
+                    brick = new SolidBrick(x, y, brickWidth, brickHeight); // pour des  SolidBrick
+                } else {
+                    brick = new NormalBrick(x, y, brickWidth, brickHeight); // pour choisir des  NormalBrick
+                }
                 bricks[row * cols + col] = brick; // ajouter au tableau
                 root.getChildren().add(brick.getShape()); // ajouter la forme au Pane
             }

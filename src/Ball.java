@@ -1,6 +1,6 @@
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
-import javafx.scene.shape.Shape;
+
 
 public class Ball extends GameObject {
     private double vx;
@@ -11,7 +11,7 @@ public class Ball extends GameObject {
     // Constructeur, methodes ....
 
     public Ball(double x,double y, double vx, double vy,double radius){
-        // il fait appel au constructeur du GameObject et il lui passe en Circle pour la Shape
+        // il fait appel au constructeur du GameObject et il lui passe Un Circle pour le Shape
         super( x,y,new Circle(x,y,radius),DEFAULT_COLOR );
         this.vx = vx;
         this.vy = vy;

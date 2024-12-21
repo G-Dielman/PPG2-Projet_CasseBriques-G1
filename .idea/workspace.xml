@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="725308e5-e1a2-4f33-a725-b75c2080a13b" name="Changes" comment="correction collisions....ca fonctionne!!!">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="725308e5-e1a2-4f33-a725-b75c2080a13b" name="Changes" comment="correction collisions.... pour que la ball ne change la direction que en Y. il y avait une mauvaise condition pour CollideTop , collideLeft et CollideRight ont du etre adaptés aussi">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ball.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BreakoutGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BreakoutGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Paddle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Paddle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RectangularGameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RectangularGameObject.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +102,7 @@
       <workItem from="1734422316026" duration="1764000" />
       <workItem from="1734459200384" duration="1307000" />
       <workItem from="1734611992673" duration="9012000" />
-      <workItem from="1734803295346" duration="2882000" />
+      <workItem from="1734803295346" duration="4012000" />
     </task>
     <task id="LOCAL-00001" summary="Modif du GitIgnore">
       <option name="closed" value="true" />
@@ -227,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734620488358</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="correction collisions.... pour que la ball ne change la direction que en Y. il y avait une mauvaise condition pour CollideTop , collideLeft et CollideRight ont du etre adaptés aussi">
+      <option name="closed" value="true" />
+      <created>1734806658171</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1734806658171</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +275,7 @@
     <MESSAGE value="elimination bugs de la classe Main" />
     <MESSAGE value="correction collisions" />
     <MESSAGE value="correction collisions....ca fonctionne!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="correction collisions....ca fonctionne!!!" />
+    <MESSAGE value="correction collisions.... pour que la ball ne change la direction que en Y. il y avait une mauvaise condition pour CollideTop , collideLeft et CollideRight ont du etre adaptés aussi" />
+    <option name="LAST_COMMIT_MESSAGE" value="correction collisions.... pour que la ball ne change la direction que en Y. il y avait une mauvaise condition pour CollideTop , collideLeft et CollideRight ont du etre adaptés aussi" />
   </component>
 </project>
