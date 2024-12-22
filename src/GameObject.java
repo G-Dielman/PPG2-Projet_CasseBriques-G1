@@ -37,7 +37,7 @@ public abstract class GameObject {
         this.x = x;
         this.y = y;
         this.shape = shape;
-        this.color = color;
+        this.shape.setFill(color);
     }
 
     //Constructeur
